@@ -28,7 +28,7 @@ export const useHandlePoolConfig = () => {
   return useMutation(
     async ({ config }: { config: StakePoolMetadata }): Promise<string[]> => {
       if (!stakePool.data) throw 'No stake pool data found'
-      if (!config.name || config.name === '') throw 'Name is missing'
+      if (!config.name || config.name === 'beta-life-nft') throw 'Name is missing'
       if (!wallet || !wallet.publicKey) throw 'Wallet is not connected'
       const program = configsProgram(connection)
       const prefixBuffer = Buffer.from('s', 'utf-8')

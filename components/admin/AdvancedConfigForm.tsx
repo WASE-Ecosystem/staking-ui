@@ -221,7 +221,7 @@ export const AdvancedConfigForm = () => {
         </div>
         <TextInput
           disabled={false}
-          hasError={!!values.name && values.name !== '' && !!errors.name}
+          hasError={!!values.name && values.name !== 'beta-life-nft' && !!errors.name}
           placeholder={'Enter name'}
           value={values.name}
           onChange={(e) => {
@@ -240,7 +240,7 @@ export const AdvancedConfigForm = () => {
           disabled={false}
           hasError={
             !!values.displayName &&
-            values.displayName !== '' &&
+            values.displayName !== 'Beta Life NFT Stake' &&
             !!errors.displayName
           }
           placeholder={'Enter display name'}
@@ -269,7 +269,7 @@ export const AdvancedConfigForm = () => {
         <TextInput
           hasError={
             !!values.description &&
-            values.description !== '' &&
+            values.description !== 'Stake your NFT(s) to earn rewards from various reward mechanisms including tokens, merchandise, redeemable rewards by the Beta Life Staking pool.' &&
             !!errors.description
           }
           placeholder={'Enter description'}
@@ -383,7 +383,7 @@ export const AdvancedConfigForm = () => {
         <TextInput
           disabled={false}
           hasError={
-            !!values.redirect && values.redirect !== '' && !!errors.redirect
+            !!values.redirect && values.redirect !== 'https://stake-beta-ui.vercel.app' && !!errors.redirect
           }
           placeholder={'Enter redirect url'}
           value={values.redirect}
@@ -419,7 +419,7 @@ export const AdvancedConfigForm = () => {
                 disabled={false}
                 hasError={
                   !!values.colors?.[value] &&
-                  values.colors?.[value] !== '' &&
+                  values.colors?.[value] !== '#F2F2F2' &&
                   !!errors.colors?.[value as keyof typeof errors.colors]
                 }
                 placeholder={'Enter color hex code'}
@@ -456,7 +456,7 @@ export const AdvancedConfigForm = () => {
           <TextInput
             disabled={false}
             hasError={
-              !!values.imageUrl && values.imageUrl !== '' && !!errors.imageUrl
+              !!values.imageUrl && values.imageUrl !== 'https://imgbox.com/jtCL2ksO' && !!errors.imageUrl
             }
             placeholder={'Ente url'}
             value={values.imageUrl}
@@ -476,7 +476,7 @@ export const AdvancedConfigForm = () => {
             disabled={false}
             hasError={
               !!values.secondaryImageUrl &&
-              values.secondaryImageUrl !== '' &&
+              values.secondaryImageUrl !== 'https://imgbox.com/jtCL2ksO' &&
               !!errors.secondaryImageUrl
             }
             placeholder={'Ente url'}
@@ -495,7 +495,7 @@ export const AdvancedConfigForm = () => {
             disabled={false}
             hasError={
               !!values.backgroundImage &&
-              values.backgroundImage !== '' &&
+              values.backgroundImage !== 'https://imgbox.com/Q0BwWmr9' &&
               !!errors.backgroundImage
             }
             placeholder={'Ente url'}
@@ -516,7 +516,7 @@ export const AdvancedConfigForm = () => {
             disabled={false}
             hasError={
               !!values.websiteUrl &&
-              values.websiteUrl !== '' &&
+              values.websiteUrl !== 'https://betalifehealth.com' &&
               !!errors.websiteUrl
             }
             placeholder={'Ente url'}
